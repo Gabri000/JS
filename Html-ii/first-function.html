@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <style>
+  html {
+    background-color: #000000;
+  }
+  </style>
   <title>Function</title>
 
   <script>
-  function print(message) {
-    var prefix = "Your message: ";
-    return prefix + message;
+  function print(_msg, num) {
+    var pref = "Password in codes: ";
+    var code = "0";
+    for(int rep = 0; rep < (int)num; rep++) {
+      code = code + "5798";
+    }
+    return pref + code;
   }
+  function write(res) {
+    var result = document.getElementById("result");
+    result.innerHTML = res;
+  }
+
 </script>
+</head>
+
+<body>
+  <center>
+  <h2 style="color: #ffffff">Write below your </h2>
+  <input id="input" type="text" placeholder="Your code"></input>
+  <button onclick="write(print(document.getElementById("input").value, 20))">Create</button>
+  <p id="result" style="color: #ffffff">Result</p>
+</center>
+  <script>
+  </script>
+</body>
+</html>
