@@ -9,27 +9,40 @@
   <title>Function</title>
 
   <script>
-  function print(_msg, num) {
+  function print(num) {
     var pref = "Password in codes: ";
-    var code = "0";
-    for(int rep = 0; rep < num; rep++) {
-      code = code + "5798";
+    var code = "";
+    for(var rep = 0; rep < num; rep++) {
+      code += code+5798;
     }
-    return pref + code;
+    var total = "";
+    total = pref + code;
+    return total;
   }
   function write(res) {
     var result = document.getElementById("result");
     result.innerHTML = res;
+    document.getElementById("result").value = res;
+  }
+
+  function start() {
+    var input = document.getElementById("input");
+    var temp = input.value;
+    write(print(temp));
   }
 
 </script>
 </head>
-
 <body>
-  <center>
+  <center id="container">
   <h2 style="color: #ffffff">Write below your </h2>
+  <br>
+  <br>
+  <form name="form" action="first-function.html" onsubmit="return start()" method="post">
   <input id="input" type="text" placeholder="Your code"></input>
-  <button onclick="write(print(document.getElementById("input").value, 20));">Create</button>
+  <input type="submit" value="Create now">
+</form>
+  <br>
   <p id="result" style="color: #ffffff">Result</p>
 </center>
   <script>
