@@ -11,13 +11,13 @@
   <script>
   function print(num) {
     var pref = "Password in codes: ";
-    var code = "000";
+    var cmd = "000";
     for(var rep = 0; rep < num; rep++) {
-      code += 57950;
+      cmd += "57950"+"<br>";
     }
-    code.replace("50", "</br>");
+    cmd.replace("50", "<br>");
     var total = "";
-    total = pref + code;
+    total = pref + cmd;
     return total;
   }
   function write(res) {
