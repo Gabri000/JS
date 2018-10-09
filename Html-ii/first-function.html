@@ -11,23 +11,23 @@
   <script>
   function print(num) {
     var pref = "Password in codes: ";
-    var code = "";
+    var code = "000";
     for(var rep = 0; rep < num; rep++) {
-      code += code+5798;
+      code += 57950;
     }
     var total = "";
     total = pref + code;
     return total;
   }
   function write(res) {
-    var result = document.getElementById("result");
-    result.innerHTML = res;
+    var Result = document.getElementById("result");
+    Result.innerHTML = res;
     document.getElementById("result").value = res;
   }
 
   function start() {
-    var input = document.getElementById("input");
-    var temp = input.value;
+    var Input = document.getElementById("input");
+    var temp = Input.value;
     write(print(temp));
   }
 
@@ -38,12 +38,10 @@
   <h2 style="color: #ffffff">Write below your </h2>
   <br>
   <br>
-  <form name="form" action="first-function.html" onsubmit="return start()" method="post">
   <input id="input" type="text" placeholder="Your code"></input>
-  <input type="submit" value="Create now">
-</form>
+  <button onclick="return start()" type="submit">Create now</button>
   <br>
-  <p id="result" style="color: #ffffff">Result</p>
+  <p id="result" style="color: #ffffff; font-family">Result</p>
 </center>
   <script>
   </script>
