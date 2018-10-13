@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Function Repeat</title>
+  <script>
+  function repeat(value, times) {
+    var homework = "";
+    for(var rep = 0; rep < times; rep++) {
+      homework += "<h2>" + value + "</h2>" + "<br>";
+    }
+    return homework;
+  }
+  </script>
+</head>
+<body>
+<script>
+document.write(repeat("I will not disturb in class!", 100));
+</script>
+</body>
+</html>
