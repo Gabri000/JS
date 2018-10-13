@@ -14,4 +14,22 @@ a:hover {
   trasition: 0.5s;
 }
 
-#
+#gohome {
+  display: none;
+  transition: 0.7s;
+}
+
+#title {
+  display: none;
+  transition: 0.7s;
+}
+
+#description {
+  display: none;
+  transition: 0.7s;
+}
+
+#demo {
+  display: none;
+  transition: 0.7s;
+}

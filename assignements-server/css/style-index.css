@@ -2,3 +2,25 @@ html {
   color: #000000;
   background-color: #ff9933;
 }
+
+#table {
+  border-radius: 20px;
+}
+
+#table tr {
+  transition: 0.7s;
+  border-radius: 20px;
+}
+
+#table tr:hover {
+  background-color: RED;
+}
+
+#table th, #table tr {
+  padding: 8px;
+  border-radius: 20px;
+}
+
+.byline {
+  position: fixed, bottom;
+}

@@ -20,19 +20,35 @@ function laugh(times){
   return ha;
 }
 
+function openBody() {
+  var container = document.getElementById('container');
+  var gohome = document.getElementById('gohome');
+  var title = document.getElementById('title');
+  var description = document.getElementById('description');
+  var demo = document.getElementById('demo');
+  // Timeout start
+  setTimeout(setVisible(container), 1000);
+  setTimeout(setVisible(gohome), 1100);
+  setTimeout(setVisible)
+}
+
+function setVisible(elmnt) {
+  elmnt.display = visible;
+}
 </script>
 </head>
 
 <body>
   <div id="container">
-  <h3><a href="../index.htm">Index</a></h3>
+  <h3 id="gohome"><a href="../index.htm">Index</a></h3>
   <center>
-    <h2 class="title"><a href="assignement-01.htm">Assignement 1</a> : Laugh</h2>
-    <h4 class="description"><b>Description:</b> this function consists of repeating as many times as the number of times required as a variable, a value equal to "HA".<br>Below repeated 50 times.</h4>
+    <h2 id="title" class="title"><a href="assignement-01.htm">Assignement 1</a> : Laugh</h2>
+    <h4 id="description" class="description"><b>Description:</b> this function consists of repeating as many times as the number of times required as a variable, a value equal to "HA".<br>Below repeated 50 times.</h4>
     <br>
-    <p>
+    <p id="demo">
 <script>
 document.write(laugh(50));
+openBody();
 </script>
 </p>
 </center>
