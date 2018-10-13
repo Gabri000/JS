@@ -1,0 +1,24 @@
+// This calls the font in Google fonts server
+@import url('https://fonts.googleapis.com/css?family=ABeeZee');
+
+body {
+  height: 100%;
+}
+
+#container {
+  font-family: 'AbeeZee', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.5s;
+  color: #009900;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+.bold {
+  color
+}
