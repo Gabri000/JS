@@ -1,16 +1,16 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
   <title>Assignement : Laugh</title>
   <link rel="icon" href="../img/icon.ico" />
   <link rel="stylesheet" type="text/css" href="../css/style-def.css" />
   <link rel="stylesheet" type="text/css" href="../css/style-a01.css" />
-    <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
-    <style>
+  <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+  <style>
     html {
       font-family: "ABeeZee", sans-serif;
     }
-    </style>
+  </style>
 <script>
 function laugh(times){
   var ha = "";
@@ -19,7 +19,8 @@ function laugh(times){
   }
   return ha;
 }
-
+/*
+// Should be opening animation...=(
 function openBody() {
   var container = document.getElementById('container');
   var gohome = document.getElementById('gohome');
@@ -27,14 +28,17 @@ function openBody() {
   var description = document.getElementById('description');
   var demo = document.getElementById('demo');
   // Timeout start
-  setTimeout(setVisible(container), 1000);
-  setTimeout(setVisible(gohome), 1100);
-  setTimeout(setVisible)
+  window.setTimeout(setVisible(container), 1000);
+  window.setTimeout(setVisible(gohome), 1500);
+  window.setTimeout(setVisible(title), 2500);
+  window.setTimeout(setVisible(description), 2700);
+  window.setTimeout(setVisible(demo), 3000);
 }
 
 function setVisible(elmnt) {
-  elmnt.display = visible;
+  elmnt.style.display = 'block';
 }
+*/
 </script>
 </head>
 
@@ -43,12 +47,14 @@ function setVisible(elmnt) {
   <h3 id="gohome"><a href="../index.htm">Index</a></h3>
   <center>
     <h2 id="title" class="title"><a href="assignement-01.htm">Assignement 1</a> : Laugh</h2>
-    <h4 id="description" class="description"><b>Description:</b> this function consists of repeating as many times as the number of times required as a variable, a value equal to "HA".<br>Below repeated 50 times.</h4>
+    <h4 id="description" class="description"><span class="description-span">Description:</span> this function consists of repeating as many times as the number of times required as a variable, a value equal to "HA".<br>Below repeated 50 times.</h4>
     <br>
     <p id="demo">
 <script>
 document.write(laugh(50));
-openBody();
+/*
+window.setTimeout(openBody(), 10000);
+*/
 </script>
 </p>
 </center>

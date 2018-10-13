@@ -9,20 +9,16 @@ html {
 
 #table tr {
   transition: 0.7s;
-  border-radius: 20px;
+  border-radius: 15px;
 }
 
-#table tr:hover {
+#table th:hover {
   background-color: #F5B26F;
 }
 
 #table th, #table tr {
   padding: 8px;
-  border-radius: 20px;
-}
-
-.byline {
-  position: fixed, bottom;
+  border-radius: 15px;
 }
 
 a:hover {
