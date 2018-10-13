@@ -13,6 +13,7 @@ a {
   text-decoration: none;
   transition: 0.5s;
   color: #009900;
+  cursor: pointer;
 }
 
 a:hover {
@@ -34,5 +35,5 @@ a:hover {
 }
 
 .description-span:hover {
-  color: BLUE;
+  color: #ffffff;
 }
