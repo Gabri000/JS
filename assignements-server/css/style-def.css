@@ -30,8 +30,9 @@ a:hover {
 .description-span {
   color: #009900;
   cursor: pointer;
+  transition: 0.4s;
 }
 
 .description-span:hover {
-  color: #ffffff;
+  color: BLUE;
 }
