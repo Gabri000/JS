@@ -1,0 +1,8 @@
+html {
+  color: #ffffff;
+  font-family: Comic Sans MS;
+}
+body {
+  background-color: red;
+  background-image: linear-gradient(to top, red, yellow);
+}
