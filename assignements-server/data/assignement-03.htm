@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <title>Function Repeat</title>
+  <title>Hello My Friend</title>
   <link rel="icon" href="../img/icon.ico" />
   <link rel="stylesheet" type="text/css" href="../css/style-def.css">
   <link rel="stylesheet" type="text/css" href="../css/style-a03.css" />
@@ -19,16 +19,15 @@
   function start() {
     var output_wigdet = document.getElementById("output_widget");
     var output_title = document.getElementById("output_title");
-    output_title.innerHTML = "Ciao";
+    output_title.innerHTML = "";
     var name_input = document.getElementById("name_input");
-    var name = name_input.value;
-    if (name.equals("")) {
-      alert("A blank name is not valid!");
-    } else {
-      output_widget.innerHTML = "Nice to see you, " + name;
+    var name = document.getElementById("name_input").value;
+    if (name != "") {
+      output_widget.innerHTML = "Nice to see you, " + name + "!";
       output_title.innerHTML = "Hello! output: ";
+    } else {
+      alert("Name not valid.");
     }
-    var output =
   }
   </script>
 </head>
@@ -36,12 +35,12 @@
   <div id="container">
   <h3 id="gohome"><a href="../index.htm">Index</a></h3>
   <center>
-    <h2 id="title" class="title"><a onclick="location.reload();">Assignement 2</a> : Repeat</h2>
+    <h2 id="title" class="title"><a onclick="location.reload();">Assignement 3</a> : Hello My Friend</h2>
     <div id="redirect"><br></div>
     <h4 id="description" class="description"><span class="description-span" onclick="window.open('#redirect', '_self');">Description:</span> Make an HTML page with an input element and a button element.<br>When you type your name to the input field and push the button, the computer will give you a message "Nice to see you, X", where instead of X is the name typed in the input field (see picture 1).<br>Tip: you need some JavaScript to get the values and write the comment.</h4>
     <br>
     <h2>Get a Hello!:</h2>
-    <input id="name_input" class="cool-input" placeholder="Your name.." type="text"></input><button onclick="start();" id="go" class="button">Click here!</button>
+    <input id="name_input" class="cool-input" placeholder="Your name.." type="text" /><button onclick="start();" id="go" class="button">Click here!</button>
     <h4 id="output_title"></h4>
     <h4 id="output_widget"></h4>
     <!-- <textarea placeholder="Describe yourself here..."></textarea> -->
