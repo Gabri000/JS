@@ -3,6 +3,7 @@
   border: 2px solid #ffff55;
   border-radius: 4px;
   font-size: 18px;
+  padding-left: 2px;
 }
 
 ::placeholder {

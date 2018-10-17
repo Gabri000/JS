@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <title>Assignement : Laugh</title>
+  <title>Assignement : Multiply input</title>
   <link rel="icon" href="../img/icon.ico" />
   <link rel="stylesheet" type="text/css" href="../css/style-def.css" />
   <link rel="stylesheet" type="text/css" href="../css/style-a04.css" />
@@ -10,18 +10,25 @@
     html {
       font-family: "ABeeZee", sans-serif;
     }
+
+    .valueInput {
+      font-family: "AbeeZee", sans-serif;
+    }
   </style>
 <script>
 function repeat() {
-  var str = document.getElementById('valueInput').value;
+  var str = document.getElementById("valueInput").value;
   var resultH = document.getElementById('resultH');
   var res = "";
-  if (str = "") {
-    alert("The value isn't valid, insert a value in the input text to access the function.");
-  } else {
-    for(int rep; rep < 10; rep++) {
+  if (str != "") {
+    for(var rep = 0; rep < 10; rep++) {
       res += "<h4>" + str + "</h4>";
     }
+    document.getElementById("resultH").style.color = "black";
+    document.getElementById("resultH").innerHTML = res;
+  } else {
+    document.getElementById("resultH").style.color = "red";
+    document.getElementById("resultH").innerHTML = "The value isn't valid, insert a value in the input text to access the function.";
   }
 }
 </script>
@@ -34,7 +41,7 @@ function repeat() {
     <h2 id="title" class="title"><a onclick="location.reload();">Assignement 4</a> : Multiply input</h2>
     <h4 id="description" class="description"><span class="description-span">Description:</span> Make an HTML page with an input element and a button element. Some other basic elements may be needed as well.<br>When you type something to the input field and push the button, the computer will give you 10 times the same text, as in <a href="../img/multiply.png">Picture 1</a>. <br>Use for loop to do the repeating.</h4>
     <br>
-    <input placeholder="" type="text" id="valueInput"/><button onclick="repeat()" id="repeatMe">Repeat me!</button>
+    <input class="valueInput" placeholder="Repeat value" type="text" id="valueInput" /><button onclick="repeat()" id="repeatMe">Repeat me!</button>
     <h4 id="resultH"></h4>
 </center>
 </div>
