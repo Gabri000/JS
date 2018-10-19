@@ -12,3 +12,23 @@
   padding-bottom: 5px;
   color: #000000;
 }
+
+#submitValue {
+  border: none;
+  color: black;
+  background-color: white;
+  padding: 14px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.7s;
+}
+
+#submitValue:hover {
+ color: white;
+ background-color: black;
+}
