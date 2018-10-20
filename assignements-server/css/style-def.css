@@ -47,3 +47,14 @@ a:hover {
 .description-span:hover {
   color: #ffffff;
 }
+
+.title-span {
+  color: #009900;
+  cursor: help;
+  transition: 0.4s;
+  font-weight: bold;
+}
+
+.title-span:hover {
+  color: #ffffff;
+}
