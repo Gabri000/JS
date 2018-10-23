@@ -17,29 +17,30 @@
   </style>
 <script>
 function mainFunc() {
+  document.getElemlentById('resultH').innerHTML = multiply();
+  /*
   if (inputsAreEmpty()) {
+    document.getElementById("resultTitle").style.display = "none";
     document.getElementById("resultH").innerHTML = "ERROR";
   } else {
-  document.getElemlentById('resultH').innerHTML = multiply();
+    document.getElemlentById('resultH').innerHTML = multiply();
+    document.getElementById("resultTitle").style.display = "block";
   }
 
   function inputsAreEmpty() {
-    var var0 = document.getElementById("valueInput0").value;
-    var var00 = document.getElementById("valueInput00").input;
-  if (var0() === '' || var00() === '') {
+    var var0 = document.getElementById("valueInput0").innerHTML;
+    var var00 = document.getElementById("valueInput00").innerHTML;
+  if (var0 === '' || var00 === '') {
     return true;
   } else {
     return false;
   }
 }
-
-  if (var00 != "") {
-    else
-  }
+  */
 }
 
 function multiply(v1, v2) {
-return v1 * v2;
+return 10 * 40;
 }
 </script>
 </head>
@@ -53,7 +54,7 @@ return v1 * v2;
     <br>
     <input id="valueInput0" class="valueInput inputClass" type="number"/><input id="valueInput00" class="valueInput inputClass" type="number"/><button id="submitValue" class="buttonClass" onclick="mainFunc();">Multiply</button>
     <br>
-    <h4 id="resultTitle">Result:</h4>
+    <h4 id="resultTitle" style="display: none;">Result:</h4>
     <h4 id="resultH"></h4>
 </center>
 </div>
