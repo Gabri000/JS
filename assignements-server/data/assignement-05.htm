@@ -17,14 +17,21 @@
   </style>
 <script>
 function mainFunc() {
-  var var0 = document.getElementById('valueInput0').innerHTML;
-  var var00 = document.getElementById('valueInput00').innerHTML;
-  if (var0 != "") {
-    multiply();
-    document.getElemlentById('resultH').innerHTML = "";
+  if (inputsAreEmpty()) {
+    document.getElementById("resultH").innerHTML = "ERROR";
   } else {
-    document.getElementById('resultH').innerHTML = "ERROR";
+  document.getElemlentById('resultH').innerHTML = multiply();
   }
+
+  function inputsAreEmpty() {
+    var var0 = document.getElementById("valueInput0").value;
+    var var00 = document.getElementById("valueInput00").input;
+  if (var0() === '' || var00() === '') {
+    return true;
+  } else {
+    return false;
+  }
+}
 
   if (var00 != "") {
     else
