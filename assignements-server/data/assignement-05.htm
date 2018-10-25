@@ -17,19 +17,20 @@
   </style>
 <script>
 function mainFunc() {
-  document.getElementById('resultH').innerHTML = multiply();
-  /*
+    var var0 = document.getElementById("valueInput0").value;
+    var var00 = document.getElementById("valueInput00").value;
+  /* document.getElementById('resultH').innerHTML = multiply(); */
   if (inputsAreEmpty()) {
     document.getElementById("resultTitle").style.display = "none";
     document.getElementById("resultH").innerHTML = "ERROR";
   } else {
-    document.getElementById('resultH').innerHTML = multiply();
+    document.getElementById('resultH').innerHTML = multiply(var0, var00);
     document.getElementById("resultTitle").style.display = "block";
   }
 
   function inputsAreEmpty() {
-    var var0 = document.getElementById("valueInput0").innerHTML;
-    var var00 = document.getElementById("valueInput00").innerHTML;
+    var var0 = document.getElementById("valueInput0").value;
+    var var00 = document.getElementById("valueInput00").value;
   if (var0 === '' || var00 === '') {
     return true;
   } else {
@@ -40,7 +41,7 @@ function mainFunc() {
 }
 
 function multiply(v1, v2) {
-return 10 * 40;
+return v1 * v2;
 }
 </script>
 </head>
