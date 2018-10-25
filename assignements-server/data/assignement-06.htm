@@ -1,7 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Dynamic squares </title>
+  <title>Dynamic squares </title>
+  <link rel="icon" href="../img/icon.ico" />
+  <link rel="stylesheet" type="text/css" href="../css/style-def.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-a06.css" />
+  <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+  <style>
+    html {
+      font-family: "ABeeZee", sans-serif;
+    }
+    .inputClass {
+      font-family: "AbeeZee", sans-serif;
+    }
+  </style>
 <script>
 /* Creates a square with the features given as parameters and appends it to the body element. */
 
@@ -29,9 +41,9 @@ function addSquares() {
 <body>
 <h1>Dynamic squares</h1>
 <p style="font-weight:bold"> Fill in the information and click the button. </p>
-<p>Number of squares:<input type="number" id="inputNumber"></p>
-<p>Color of squares:<input type="text" id="inputColor"></p>
-<p>Size of squares (px):<input type="text" id="inputSize"></p>
-<button onclick="addSquares()">Add squares!</button>
+<p>Number of squares:<input type="number" class="valueInput inputClass" id="inputNumber"></p>
+<p>Color of squares:<input type="text" class="valueInput inputClass" id="inputColor"></p>
+<p>Size of squares (px):<input type="number" class="valueInput inputClass" id="inputSize"></p>
+<button class="buttonClass" onclick="addSquares()">Add squares!</button>
 </body>
 </html>
