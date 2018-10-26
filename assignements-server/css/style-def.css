@@ -1,8 +1,9 @@
 // This calls the font in Google fonts server
-@import url('https://fonts.googleapis.com/css?family=ABeeZee');
+@import url('font.css');
 
 body {
   height: 100%;
+  font-family: 'AbeeZee', sans-serif;
 }
 
 #container {
