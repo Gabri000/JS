@@ -50,7 +50,13 @@ function addSquares() {
 // Checks and detects the blank values
   if (valueNumber.equals('') || valueColor.equals('') || valueSize.equals('')) {
 
-    alert('Some value are not ')
+    alert('Some value are blank.');
+
+  } else {
+
+    for(var repvar = 0; repvar < valueNumber; repvar++;) {
+      makeSquares();
+    }
 
   }
 }
