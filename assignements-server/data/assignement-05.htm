@@ -5,8 +5,8 @@
   <title>Assignement : Multiplicator</title>
   <link rel="icon" href="../img/icon.ico" />
   <link rel="stylesheet" type="text/css" href="../css/style-def.css" />
-  <link rel="stylesheet" type="text/css" href="../css/style-a05.css" />
-  <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../css/style-a05.css" /><!--
+  <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">-->
   <script src="../js/snackBar.js" type="text/javascript"></script>
   <style>
 
@@ -19,32 +19,35 @@
     }
   </style>
 <script>
-function mainFunc() {
+  function mainFunc() {
     var var0 = document.getElementById("valueInput0").value;
     var var00 = document.getElementById("valueInput00").value;
-  /* document.getElementById('resultH').innerHTML = multiply(); */
-  if (inputsAreEmpty()) {
-    document.getElementById("resultTitle").style.display = "none";
-    document.getElementById("resultH").innerHTML = "ERROR";
-  } else {
-    document.getElementById('resultH').innerHTML = multiply(var0, var00);
-    document.getElementById("resultTitle").style.display = "block";
-  }
+    /* document.getElementById('resultH').innerHTML = multiply(); */
+    if (inputsAreEmpty()) {
+      document.getElementById("resultH").innerHTML = "";
+      document.getElementById("resultTitle").innerHTML = "";
+      msg("Some inputs are empty");
+    } else {
+      document.getElementById("resultH").innerHTML = multiply(var0, var00);
+      document.getElementById("resultTitle").style.display = "block";
+    }
 
-  function inputsAreEmpty() {
-    var var0 = document.getElementById("valueInput0").value;
-    var var00 = document.getElementById("valueInput00").value;
-  if (var0 === '' || var00 === '') {
-    return true;
-  } else {
-    return false;
-  }
-}
-  */
+    function inputsAreEmpty() {
+      var var0 = document.getElementById("valueInput0").value;
+      var var00 = document.getElementById("valueInput00").value;
+      if (var0.length == 0 || var00.length == 0) {
+        var bol = true;
+      } else {
+        var bol = false;
+      }
+      return bol;
+    }
 }
 
 function multiply(v1, v2) {
-return v1 * v2;
+  var res = new Number(v1 * v2);
+  var str = new String(v1 + " * " + v2 + " = " + res);
+  return str;
 }
 </script>
 </head>
@@ -62,6 +65,6 @@ return v1 * v2;
     <h4 id="resultH"></h4>
 </center>
 </div>
-<div id="snackBar"></div>
+<div id="snackBar" unselectable="true"></div>
 </body>
 </html>
