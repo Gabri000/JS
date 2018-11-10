@@ -7,6 +7,7 @@
   <link rel="stylesheet" type="text/css" href="../css/style-def.css">
   <link rel="stylesheet" type="text/css" href="../css/style-a03.css" />
   <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+  <script src="../js/snackBar.js" type="text/javascript"></script>
   <style>
 
     html {
@@ -29,13 +30,14 @@
     var output_wigdet = document.getElementById("output_widget");
     var output_title = document.getElementById("output_title");
     output_title.innerHTML = "";
+    output_widget.innerHTML = "";
     var name_input = document.getElementById("name_input");
     var name = document.getElementById("name_input").value;
     if (name != "") {
       output_widget.innerHTML = "Nice to see you, " + name + "!";
-      output_title.innerHTML = "Hello! output: ";
+      output_title.innerHTML = "Hello!";
     } else {
-      alert("Name not valid.");
+      msg("Name not valid.");
     }
   }
   </script>
@@ -54,5 +56,6 @@
     <h4 id="output_widget"></h4>
     <!-- <textarea placeholder="Describe yourself here..."></textarea> -->
   </center>
+  <div id="snackBar"></div>
 </body>
 </html>
