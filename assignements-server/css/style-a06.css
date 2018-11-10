@@ -1,0 +1,14 @@
+.valueInput {
+  background-color: #ff9933;
+  border: 2px solid #ffff55;
+  border-radius: 4px;
+  font-size: 18px;
+  padding-left: 2px;
+}
+
+::placeholder {
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #000000;
+}
