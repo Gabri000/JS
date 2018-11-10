@@ -1,11 +1,14 @@
 <!DOCTYPE html>
+<!-- CREATED BY GABRIELE BONANOMI -->
 <html>
 <head>
   <title>Dynamic squares</title>
   <link rel="icon" href="../img/icon.ico" />
   <link rel="stylesheet" type="text/css" href="../css/style-def.css" />
   <link rel="stylesheet" type="text/css" href="../css/style-a06.css" />
+  <!--
   <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+  -->
   <style>
 
     html {
@@ -16,17 +19,20 @@
       font-family: 'AbeeZee', sans-serif;
     }
 
+    .buttonInput {
+      font-family: 'AbeeZee', sans-serif;
+    }
   </style>
 <script>
 /* Creates a square with the features given as parameters and appends it to the body element. */
 
-function makeSquare(_size, _color){
+function makeSquare(size, color){
 // Creates a new div element:
 var square = document.createElement("div");
 square.style.display = "inline-block";
-square.style.height = _size + "px";
-square.style.width = _size + "px";
-square.style.backgroundColor = _color;
+square.style.height = size + "px";
+square.style.width = size + "px";
+square.style.backgroundColor = color;
 square.style.margin = "5px";
 
 // Appends the new div to the end of the body element.
@@ -35,6 +41,10 @@ document.body.appendChild(square);
 
 /* Retrieves the information given by user (number, size and color) and creates squares accordingly.
 Calls the makeSquare function when needed. */
+
+function isEmpty() {
+    return Boolean(this.length === 0 || !this.trim());
+};
 
 function addSquares() {
 // Start of the repeat function
@@ -61,10 +71,6 @@ function addSquares() {
   }
 }
 
-String.prototype.isEmpty = function() {
-    return (this.length === 0 || !this.trim());
-};
-
 </script>
 </head>
 <body>
@@ -75,10 +81,10 @@ String.prototype.isEmpty = function() {
     <h4 id="description" class="description"><span class="description-span">Description:</span> Modify the HTML page given so that it creates the squares with the features given by user.<br>You only need to implement the function addSquares. See <a href="../img/squares.png">Picture 1</a>.</h4>
     <br>
     <p style="font-weight:bold"> Fill in the information and click the button. </p>
-    <p>Number of squares:<input type="number" class="valueInput inputClass" id="inputNumber"></p>
-    <p>Color of squares:<input type="text" class="valueInput inputClass" id="inputColor"></p>
-    <p>Size of squares (px):<input type="number" class="valueInput inputClass" id="inputSize"></p>
-  <button class="buttonClass" onclick="addSquares()">Add squares!</button>
+    <p>Number of squares: <input type="number" class="valueInput inputClass" id="inputNumber"></p>
+    <p>Color of squares: <input type="text" class="valueInput inputClass" id="inputColor"></p>
+    <p>Size of squares (px): <input type="number" class="valueInput inputClass" id="inputSize"></p>
+  <button class="buttonClass buttonInput" onclick="addSquares()">Add squares!</button>
   <br>
 </center>
 </body>
