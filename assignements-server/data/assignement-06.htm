@@ -13,7 +13,7 @@
     }
 
     .inputClass {
-      font-family: "AbeeZee", sans-serif;
+      font-family: 'AbeeZee', sans-serif;
     }
 
   </style>
@@ -22,12 +22,12 @@
 
 function makeSquare(size, color){
 // Creates a new div element:
-var div = document.createElement("div");
-div.style.display = "inline-block";
-div.style.height = size+"px";
-div.style.width = size+"px";
-div.style.backgroundColor=color;
-div.style.margin="5px";
+var square = document.createElement("div");
+square.style.display = "inline-block";
+square.style.height = size + "px";
+square.style.width = size + "px";
+square.style.backgroundColor = color;
+square.style.margin = "5px";
 
 // Appends the new div to the end of the body element.
 document.body.appendChild(div);
@@ -39,7 +39,7 @@ Calls the makeSquare function when needed. */
 function addSquares() {
 // Start of the repeat function
 
-  var valueNumber = new Double();
+  var valueNumber = new Number();
   var valueColor = new String();
   var valueSize = new String();
 
