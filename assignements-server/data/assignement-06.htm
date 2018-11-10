@@ -20,17 +20,17 @@
 <script>
 /* Creates a square with the features given as parameters and appends it to the body element. */
 
-function makeSquare(size, color){
+function makeSquare(_size, _color){
 // Creates a new div element:
 var square = document.createElement("div");
 square.style.display = "inline-block";
-square.style.height = size + "px";
-square.style.width = size + "px";
-square.style.backgroundColor = color;
+square.style.height = _size + "px";
+square.style.width = _size + "px";
+square.style.backgroundColor = _color;
 square.style.margin = "5px";
 
 // Appends the new div to the end of the body element.
-document.body.appendChild(div);
+document.body.appendChild(square);
 }
 
 /* Retrieves the information given by user (number, size and color) and creates squares accordingly.
@@ -41,21 +41,21 @@ function addSquares() {
 
   var valueNumber = new Number();
   var valueColor = new String();
-  var valueSize = new String();
+  var valueSize = new Number();
 
   var valueNumber = document.getElementById('inputNumber').value;
   var valueColor = document.getElementById('inputColor').value;
   var valueSize = document.getElementById('inputSize').value;
 
 // Checks and detects the blank values
-  if (valueNumber.equals('') || valueColor.equals('') || valueSize.equals('')) {
+  if (valueNumber.isEmpty() || valueColor.isEmpty() || valueSize.isEmpty()) {
 
     alert('Some value are blank.');
 
   } else {
 
     for(var repvar = 0; repvar < valueNumber; repvar++;) {
-      makeSquares();
+      makeSquares(valueSize, valueColor);
     }
 
   }
@@ -74,6 +74,7 @@ function addSquares() {
     <p>Color of squares:<input type="text" class="valueInput inputClass" id="inputColor"></p>
     <p>Size of squares (px):<input type="number" class="valueInput inputClass" id="inputSize"></p>
   <button class="buttonClass" onclick="addSquares()">Add squares!</button>
+  <br>
 </center>
 </body>
 </html>
