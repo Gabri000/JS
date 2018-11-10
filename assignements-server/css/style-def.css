@@ -1,5 +1,6 @@
-// This calls the font in Google fonts server
+/* This calls the font in Google fonts server */
 @import url('font.css');
+@import url('snackBar.css');
 
 body {
   height: 100%;
