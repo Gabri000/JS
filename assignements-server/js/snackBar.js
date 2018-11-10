@@ -5,7 +5,7 @@ function msg(message) {
     // Add the "show" class to DIV
     sB.className = "show";
 
-    // Sets the message requested as text of the snackbar
+    // Sets the value requested as text of the DIV
     sB.innerHTML = message;
 
     // After 3 seconds, remove the show class from DI
