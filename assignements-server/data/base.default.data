@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- CREATED BY GABRIELE BONANOMI -->
+<html>
+<head>
+  <title>//TITLE</title>
+  <link rel="icon" href="../img/icon.ico" />
+  <link rel="stylesheet" type="text/css" href="../css/style-def.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-a//ASSIGNEMENT.css" />
+  <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+  <script src="../js/snackBar.js" type="text/javascript"></script>
+  <style>
+
+    html {
+      font-family: 'ABeeZee', sans-serif;
+    }
+
+  </style>
+<script>
+// Scripts here
+</script>
+</head>
+<body>
+  <div id="container">
+  <h3 id="gohome"><a href="../index.htm">Index</a></h3>
+  <center>
+    <h2 id="title" class="title"><a onclick="location.reload();">Assignement //ASSIGNEMENT</a> : //title</h2>
+    <h4 id="description" class="description"><span class="description-span">Description:</span> //DESCRIPTION</h4>
+    <br>
+    //OPTIONAL ELEMENTS
+<div id="snackBar"></div>
+</body>
+</html>
