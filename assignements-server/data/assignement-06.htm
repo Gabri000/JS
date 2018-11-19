@@ -27,16 +27,16 @@
 /* Creates a square with the features given as parameters and appends it to the body element. */
 
 function makeSquare(size, color){
-// Creates a new div element:
-var square = document.createElement("div");
-square.style.display = "inline-block";
-square.style.height = size + "px";
-square.style.width = size + "px";
-square.style.backgroundColor = color;
-square.style.margin = "5px";
+  // Creates a new div element:
+  var square = document.createElement("div");
+  square.style.display = "inline-block";
+  square.style.height = size + "px";
+  square.style.width = size + "px";
+  square.style.backgroundColor = color;
+  square.style.margin = "5px";
 
-// Appends the new div to the end of the body element.
-document.body.appendChild(square);
+  // Appends the new div to the end of the body element.
+  document.body.appendChild(square);
 }
 
 /* Retrieves the information given by user (number, size and color) and creates squares accordingly.
