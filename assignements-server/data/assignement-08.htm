@@ -26,7 +26,11 @@
     }
 
     function getArrayValue(pos) {
-      return mainArray[pos];
+      if (pos == 00) {
+        return mainArray;
+      } else {
+        return mainArray[pos];
+      }
     }
   </script>
 </head>
@@ -39,7 +43,7 @@
     <br>
     <p id="allArrays">
       <script>
-        document.write(getArrayValue())
+        document.write(getArrayValue(00))
       </script>
     </p>
     <p id="arrayBefore">
