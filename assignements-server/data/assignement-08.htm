@@ -12,6 +12,7 @@
 
     html {
       font-family: 'ABeeZee', sans-serif;
+      font-weight: bold;
     }
 
   </style>
@@ -21,12 +22,11 @@
     var mainArray = ["Amelia", "Isla", "Jack", "Sophia", "Jake", "Alexander", "Joe", "Thomas", "Jacob", "Ethan"];
 
     function changeArray(pos, value) {
-      var mainArray[pos] = value;
+      mainArray[pos] = value;
     }
 
     function getArrayValue(pos) {
-      var x
-      return mainArray[xxx];
+      return mainArray[pos];
     }
   </script>
 </head>
@@ -37,6 +37,11 @@
     <h2 id="title" class="title"><a onclick="location.reload();">Assignement 8</a> : Using Arrays</h2>
     <h4 id="description" class="description"><span class="description-span">Description: </span><br><span class="description-span">1.</span> Create a new HMTL page for the exercise as normally.<br><span class="description-span">2.</span> Declare an array that contains 10 friends of yours. Example: var myArray = ["blue", "pink", "white"];<br><span class="description-span">3.</span> Use the command document.write(xxx) to print the 3rd name in the array.<br><span class="description-span">4.</span> Use the syntax myArray[x] = "newName" to change the 3rd name in the array.<br><span class="description-span">5.</span> Use the command document.write(xxx) to print the changed name.<br><span class="description-span">6.</span> Remember to add a link to the index.html that teacher can see it.</h4>
     <br>
+    <p id="allArrays">
+      <script>
+        document.write(getArrayValue())
+      </script>
+    </p>
     <p id="arrayBefore">
       <script>
         document.write(getArrayValue(3));
