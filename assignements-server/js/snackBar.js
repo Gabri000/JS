@@ -11,19 +11,3 @@ function msg(message) {
     // After 3 seconds, remove the show class from DI
     setTimeout(function() { sB.className = sB.className.replace("show", ""); sB.innerHTML = "";}, 2500);
 }
-
-window.onload = function() {
-                var labels = document.getElementsByTagName('div');
-                for (var i = 0; i < labels.length; i++) {
-                    disableSelection(labels[i]);
-                }
-            };
-            function disableSelection(element) {
-                if (typeof element.onselectstart != 'undefined') {
-                    element.onselectstart = function() { return false; };
-                } else if (typeof element.style.MozUserSelect != 'undefined') {
-                    element.style.MozUserSelect = 'none';
-                } else {
-                    element.onmousedown = function() { return false; };
-                }
-            }
