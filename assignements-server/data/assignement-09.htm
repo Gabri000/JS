@@ -30,13 +30,17 @@
     var main = [];
     var last = [];
 
-    for (var rep = 0; rep < len; rep++) {
+    if (len == 0) {
+
+    } else {
+      for (var rep = 0; rep < len; rep++) {
       if (pos.equals(len)) {
-
-      } else {
-
+        mainArray[pos] = " and " + mainArray[pos];
+      } else if (!pos.equals(0)) {
+        var mainArray[pos] = mainArray[pos] +  ", ",
       }
     }
+  }
 
   }
 </script>
