@@ -2,7 +2,7 @@ function msg(message) {
     // Get the snackbar DIV
     var sB = document.getElementById("snackBar");
 
-    // Add the "show" class to DIV
+    // Sets the "show" class to DIV
     sB.className = "show";
 
     // Sets the value requested as text of the DIV
