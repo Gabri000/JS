@@ -18,18 +18,20 @@
 <script>
   // Scripts here
 
-  var mainArray = ["Luc", "Mathew", "Matti", "Sanna", "Anders", "Mauricette"];
+  var teachersArray = ["Luc", "Mathew", "Matti", "Sanna", "Anders", "Mauricette"];
 
   function printMyArray() {
-    var fruits, text, fLen, i;
-    fruits = ["Banana", "Orange", "Apple", "Mango"];
-    fLen = fruits.length;
+    var resArray;
+    var len;
+    var r;
 
-    text = "<ul>";
-    for (i = 0; i < fLen; i++) {
-      text += "<li>" + fruits[i] + "</li>";
+    len = teachersArray.length;
+
+    for (r = 0; r < len; r++) {
+      resArray += teachersArray[r] + ",\n";
     }
-    res += "</ul>";
+    resArray.replace(lastIndexOf(", "), "and");
+    return resArray;
   }
 
  /*
@@ -56,11 +58,15 @@
   }
 </script>
 <script>
+
   var alertMsg = "This Assginement is not avaible yet.";
-  msg(alertMsg)
+
+  msg(alertMsg);
   alert(alertMsg);
   console.log("This Assginement is not avaible yet.");
+
   setTimeout(history.go(-1), 5);
+
 </script>
 </head>
 <body>
@@ -72,7 +78,7 @@
     <br>
     <p id="arrayAfter">
       <script>
-        document.write(printMyArray);
+        document.write(printMyArray());
       </script>
     </p>
 <div id="snackBar"></div>
