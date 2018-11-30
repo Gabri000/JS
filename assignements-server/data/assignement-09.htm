@@ -28,14 +28,15 @@
     len = teachersArray.length;
 
     for (r = 0; r < len; r++) {
-      resArray += teachersArray[r] + ",\n";
+      resArray += teachersArray[r] + ",\n"+r;
     }
-    resArray.replace(lastIndexOf(", "), "and");
+    resArray.replace(lastIndexOf(",\n"), "and");
     return resArray;
   }
 
  /*
  // This was a try to create at each index of array's content the formatting as "," and "and".
+
   function setCorrectFormatting() {
     var len = mainArray.length;
     var pos = 0;
@@ -53,9 +54,10 @@
       }
     }
   }
+  }
   */
 
-  }
+
 </script>
 <script>
 
