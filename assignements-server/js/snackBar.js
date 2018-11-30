@@ -3,7 +3,10 @@ function msg(message) {
     var sB = document.getElementById("snackBar");
 
     // Sets the "show" class to DIV
+    /*
     sB.className = "show";
+    */
+    sB.classList.toggle('show');
 
     // Sets the value requested as text of the DIV
     sB.innerHTML = message;
