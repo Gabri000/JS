@@ -21,7 +21,8 @@
   var teachersArray = ["Luc", "Mathew", "Matti", "Sanna", "Anders", "Mauricette"];
 
   function printMyArray() {
-    var resArray;
+    /*
+    var resArray[];
     var len;
     var r;
 
@@ -30,8 +31,18 @@
     for (r = 0; r < len; r++) {
       resArray += teachersArray[r] + ",\n"+r;
     }
-    resArray.replace(lastIndexOf(",\n"), "and");
-    return resArray;
+    resArray.replace(teachersArray.lastIndexOf(",\n"), "and");
+    */
+    var res = new String();
+    var lastCommapos = new Number();
+
+    res = teachersArray.toString().
+    replace(",", ", ");
+    lastCommapos = teachersArray.toString().lastIndexOf(",");
+    res = res.replace(lastCommapos, " and ");
+
+    return res;
+
   }
 
  /*
@@ -62,11 +73,18 @@
 <script>
 
   var alertMsg = "This Assginement is not avaible yet.";
-
-  alert(alertMsg);
-  console.log("This Assginement is not avaible yet.");
-
-  setTimeout(history.go(-1), 10000);
+  /*
+  alert(alertMsg); */
+  console.log(alertMsg);
+  var txt;
+  var person = prompt("Please enter the password to acces the assignement:", "");
+  if (person == null || person == "") {
+    setTimeout(history.go(-1), 1);
+  } else {
+    if (person !== "passw0rd") {
+      setTimeout(history.go(-1), 1);
+    }
+  }
 
 </script>
 </head>
