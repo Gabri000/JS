@@ -8,6 +8,7 @@
   <link rel="stylesheet" type="text/css" href="../css/style-a09.css" />
   <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
   <script src="../js/snackBar.js" type="text/javascript"></script>
+  <script src="../js/securityEntry.js" type="text/javascript"></script>
   <style>
 
     html {
@@ -46,7 +47,7 @@
     var tempString;
 
     for(var rep = 0; rep < teachersArray.length; rep++) {
-      if (rep == teachersArray.length) {
+      if (rep === teachersArray.length) {
         tempString += tempString + " and " + teachersArray[rep];
       } else {
         tempString += tempString + ", " + teachersArray[rep];
@@ -89,15 +90,6 @@
   /*
   alert(alertMsg); */
   console.log(alertMsg);
-  var txt;
-  var person = prompt("Please enter the password to acces the assignement:", "");
-  if (person == null || person == "") {
-    setTimeout(history.go(-1), 1);
-  } else {
-    if (person !== "passw0rd") {
-      setTimeout(history.go(-1), 1);
-    }
-  }
 
 </script>
 </head>
