@@ -1,6 +1,6 @@
 
   requestAccess();
- function requestAccess(pass) {
+  function requestAccess(pass) {
 
   var access = prompt("Please enter the password to acces the assignement:", "");
   if (access == null || access == "") {
