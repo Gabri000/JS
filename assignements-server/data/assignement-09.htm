@@ -8,7 +8,10 @@
   <link rel="stylesheet" type="text/css" href="../css/style-a09.css" />
   <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
   <script src="../js/snackBar.js" type="text/javascript"></script>
+  <script src="../js/script-def.js" type="text/javascript"></script>
+  <!--
   <script src="../js/securityEntry.js" type="text/javascript"></script>
+-->
   <style>
 
     html {
@@ -22,80 +25,37 @@
   var teachersArray = ["Luc", "Mathew", "Matti", "Sanna", "Anders", "Mauricette"];
 
   function printMyArray() {
-    /*
-    var resArray[];
-    var len;
-    var r;
 
-    len = teachersArray.length;
-
-    for (r = 0; r < len; r++) {
-      resArray += teachersArray[r] + ",\n"+r;
-    }
-    resArray.replace(teachersArray.lastIndexOf(",\n"), "and");
-    var res = new String();
-    var lastCommapos = new Number();
-
-    res = teachersArray.toString().
-    replace(",", ", ");
-    lastCommapos = teachersArray.toString().lastIndexOf(",");
-    res = res.replace(lastCommapos, " and ");
-
-    return res;
-    */
-    var resString;
-    var tempString;
+    var tempString = new String();
 
     for(var rep = 0; rep < 6; rep++) {
       if (rep === 6) {
-        tempString += tempString + " and " + teachersArray[rep];
+        tempString += " and " + teachersArray[rep];
       } else {
-        tempString += tempString + ", " + teachersArray[rep];
+        if (rep === "0") {
+          tempString += teachersArray[rep];
+        } else {
+          tempString += ", " + teachersArray[rep];
+        }
       }
     }
-     resString = tempString;
+    return tempString.toString();
+}
 
-     return resString;
-
-  }
-
- /*
- // This was a try to create at each index of array's content the formatting as "," and "and".
-
-  function setCorrectFormatting() {
-    var len = mainArray.length;
-    var pos = 0;
-    var temp = new String();
-    var resArray[];
-
-    if (len == 0) {
-      resArray.push(mainArray[0]);
-    } else {
-      for (pos < len; pos++) {
-      if (pos.equals(len)) {
-        mainArray[pos] = " and " + mainArray[pos];
-      } else if (!pos.equals(0)) {
-        var mainArray[pos] = mainArray[pos] +  ", ",
-      }
-    }
-  }
-  }
-  */
-
+// Some of tryied scripts are in the linked script sheet.
 
 </script>
 <script>
 
   var alertMsg = "This Assginement is not avaible yet.";
-  /*
-  alert(alertMsg); */
+  // alert(alertMsg);
   console.log(alertMsg);
 
 </script>
 </head>
 <body>
   <div id="container">
-  <h3 id="gohome"><a href="../index.htm">Index</a></h3>
+  <h3 id="gohome" onclick="openPage('i', 'index');"><a>Index</a></h3>
   <center>
     <h2 id="title" class="unselectable title"><a onclick="location.reload();">Assignement 9</a> : Function printMyArray</h2>
     <h4 id="description" class="description"><span class="description-span">Description:</span> Make a function with name printMyArray() that gets an array as a parameter and returns a string that lists all the items of the array separated otherwise by a comma + an empty space but before the last item the comma is replaced by the word "and" (see an example below). <br></h4>
