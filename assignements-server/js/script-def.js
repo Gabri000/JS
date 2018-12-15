@@ -3,6 +3,9 @@
 This page has been created by Gabriele BONANOMI
 */
 
+// To support all devices' width and screen size.
+document.write("<meta charset='utf-8'>" + "\n" + "<meta name='viewport' content='width=device-width'>");
+
 function openPage(code, href) {
 
   if (code.includes("indx")) {
