@@ -31,17 +31,22 @@
       if (rep === 6) {
         tempString += " and " + teachersArray[rep];
       } else {
-        if (rep === "0") {
+        if (rep === 0) {
           tempString += teachersArray[rep];
         } else {
           tempString += ", " + teachersArray[rep];
         }
       }
     }
+
+    /*var firstPos = tempString.substr(tempString.indexOf(', '));
+    var lastPos = firstPos + 1;
+
+    tempString = tempString.replace(", ", " and ");*/
     return tempString.toString();
 }
 
-// Some of tryied scripts are in the linked script sheet.
+// Some of tryied scripts are in the linked script sheet one the head element.
 
 </script>
 <script>
