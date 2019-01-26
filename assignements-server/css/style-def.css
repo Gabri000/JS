@@ -80,3 +80,9 @@ a:hover {
  color: white;
  background-color: black;
 }
+
+.no-script-container {
+  display: block | run-in | inline-block;
+  width: 100%;
+  height: 100%;
+}
